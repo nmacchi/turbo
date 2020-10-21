@@ -1,0 +1,16 @@
+## YAML Template.
+AppBundle\Entity\Plot:
+    type: entity
+    table: plot
+    id:
+        id:
+            type: integer
+            generator: {strategy: AUTO}
+    fields:
+        name:
+        manyToOne:
+            cropType:
+                targetEntity: Crop
+                
+        sowingDetails:
+        dimension:    
